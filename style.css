@@ -1,0 +1,124 @@
+ /* Color palette */
+    :root {
+      --dark-brown: #4e342e;
+      --medium-brown: #6d4c41;
+      --light-brown: #a1887f;
+      --beige: #d7ccc8;
+      --cream: #efebe9;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--dark-brown);
+    }
+
+    header {
+      background-color: var(--dark-brown);
+      color: white;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: var(--beige);
+    }
+
+    section {
+      padding: 80px 40px;
+    }
+
+    #home {
+      background-color: var(--beige);
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--medium-brown);
+    }
+
+    #home p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      color: var(--dark-brown);
+    }
+
+    #about {
+      background-color: var(--light-brown);
+      color: white;
+    }
+
+    #about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      max-width: 800px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--dark-brown);
+      color: var(--cream);
+      font-size: 0.9rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      #home h1 {
+        font-size: 2.5rem;
+      }
+
+      #about h2 {
+        font-size: 2rem;
+      }
+    }
